@@ -1,0 +1,311 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Open Sans' , sans-serif;
+    box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+header li a:hover{
+    color: rgb(178, 178, 184);
+} 
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    margin-right: 50px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler,
+.navbar label{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-width: 100%;
+    }
+}
+
+.baner{
+    background-image: url(/img/Black\ and\ Purple\ Futuristic\ Digital\ Technology\ Banner\ Landscape.jpg);
+    background-size:cover;
+    min-height: 100vh;
+    color: #000000df;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.chulamis{
+    background-color: rgb(255, 253, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.chulamis h3{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.683);
+    margin-bottom: 25px;
+}
+
+.chulamis p{
+    color: rgba(0, 0, 0, 0.445);
+    max-width: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.chulamis hr{
+    width: 200px;
+    height: 1px;
+    color: black;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.chulamis .grid{
+    width: 100%;
+    display: flex;
+
+}
+
+.chulamis li{
+    padding: 0 30px;
+    text-align: center;
+}
+
+.chulamis li i{
+    color: rgba(0, 0, 0, 0.779);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.chulamis li h4{
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.chulamis{
+    color: ;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.projects h5{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: rgba(0, 0, 0, 0.779);
+}
+
+.projects p{
+    max-width: 500x;
+    margin-bottom: 35px;
+    color:  rgba(0, 0, 0, 0.78) ;
+    text-align: center;
+}
+
+.projects .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects .grid li{
+    height: 350px;
+    padding: 5px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .grid .small{
+    flex-basis: 40%;
+}
+
+.projects .grid .large{
+    flex-basis: 60%;
+}
+
+.title h2{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.title p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card {
+    flex: 0 1 calc(30% - 1em);
+    margin: 1em;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 4 8px 0 rgb(0,0,0,0.2);
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: rgba(11, 12, 11, 0.816) ;
+
+}
+
+.card p {
+    margin: 0;
+    padding: 16px;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+  }
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+.form-group input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+  }
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+.trusted-by {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+.trusted-by h2 {
+    margin-bottom: 50px;
+    
+  }
+.trusted-by ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.trusted-by li {
+    margin: 0 10px;
+  }
+.trusted-by img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+.container{
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    
+  }
+
+.container p{
+    text-align: center;
+  }  
+
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+.footer a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.footer a:hover {
+    color: #ccc;
+}
+
+  
